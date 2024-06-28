@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kulima</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KULIMA</h1>
+        <b><p>Selamat Datang di Kulima.</p></b>
+
+        <p>
+            <button id="matakuliahButton">Mata Kuliah</button>
+        </p>
+
+        <p>
+            <button id="presensiButton">Presensi</button>
+        </p>
+
+        <p>
+            <button id="reportdosenButton">Report Dosen</button>    
+        </p>
+
+        <p>
+            <button id="reportsystemwebsiteButton">Report System Website</button>    
+        </p>
+
+        <p>
+            <button id="logoutButton">Logout</button>    
+        </p>
+
+    </div>
+
+    <script>
+        // Get references to the buttons
+        const matakuliahButton = document.getElementById("matakuliahButton");
+        const presensiButton = document.getElementById("presensiButton");
+        const reportdosenButton = document.getElementById("reportdosenButton");
+        const reportsystemwebsiteButton = document.getElementById("reportsystemwebsiteButton");
+        const logoutButton = document.getElementById("logoutButton"); // Add a reference to the logout button
+
+        // Add click event listeners to the buttons
+        matakuliahButton.addEventListener("click", function() {
+            window.location.href = 'createdata.php'; // Redirect to createdata.php
+        });
+
+        presensiButton.addEventListener("click", function() {
+            window.location.href = 'createdata2.php'; // Redirect to createdata2.php
+        });
+
+        reportdosenButton.addEventListener("click", function() {
+            window.location.href = 'createdata3.php'; // Redirect to createdata3.php
+        });
+
+        reportsystemwebsiteButton.addEventListener("click", function() {
+            window.location.href = 'createdata4.php'; // Redirect to createdata4.php
+        });
+
+        logoutButton.addEventListener("click", function() {
+            window.location.href = 'index.html'; // Redirect to logout.php
+        });
+    </script>
+
+</body>
+</html>

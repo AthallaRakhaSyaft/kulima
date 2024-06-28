@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Gaya umum */
+        body {
+            font-family: Arial, sans-serif; /* Memilih font untuk teks */
+            background-color: #f0f0f0; /* Warna latar belakang */
+            margin: 0; /* Menghilangkan margin bawaan dari body */
+            padding: 0; /* Menghilangkan padding bawaan dari body */
+        }
+        
+        .container {
+            max-width: 600px; /* Lebar maksimum container */
+            margin: 20px auto; /* Posisi tengah dan margin di atas/bawah */
+            background-color: #ffffff; /* Warna latar belakang container */
+            padding: 20px; /* Padding dalam container */
+            border-radius: 8px; /* Sudut bulat pada container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        h2 {
+            text-align: center; /* Teks rata tengah */
+        }
+
+        .form-group {
+            margin-bottom: 15px; /* Margin bawah setiap grup form */
+        }
+
+        .input-field {
+            width: 100%; /* Lebar input field 100% dari container */
+            padding: 8px; /* Padding dalam input field */
+            border: 1px solid #ccc; /* Garis border dengan warna abu-abu */
+            border-radius: 4px; /* Sudut bulat pada input field */
+            box-sizing: border-box; /* Box-sizing untuk padding dan border */
+        }
+
+        .submit-button {
+            background-color: #4CAF50; /* Warna latar belakang tombol simpan */
+            color: white; /* Warna teks putih */
+            padding: 10px 20px; /* Padding dalam tombol */
+            border: none; /* Tidak ada border */
+            border-radius: 4px; /* Sudut bulat pada tombol */
+            cursor: pointer; /* Kursor menunjukkan area bisa di-klik */
+            font-size: 14px; /* Ukuran font */
+            margin-top: 10px; /* Jarak atas dari tombol */
+        }
+
+        .submit-button:hover {
+            background-color: #45a049; /* Warna latar belakang saat tombol dihover */
+        }
+
+        /* Gaya umum */
+        body {
+            font-family: Arial, sans-serif; /* Memilih font untuk teks */
+            background-color: #f0f0f0; /* Warna latar belakang */
+            margin: 0; /* Menghilangkan margin bawaan dari body */
+            padding: 0; /* Menghilangkan padding bawaan dari body */
+        }
+        
+        .container {
+            max-width: 600px; /* Lebar maksimum container */
+            margin: 20px auto; /* Posisi tengah dan margin di atas/bawah */
+            background-color: #ffffff; /* Warna latar belakang container */
+            padding: 20px; /* Padding dalam container */
+            border-radius: 8px; /* Sudut bulat pada container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+        }
+
+        h3 {
+            text-align: center; /* Teks rata tengah */
+        }
+
+        .form-group {
+            margin-bottom: 15px; /* Margin bawah setiap grup form */
+        }
+
+        .input-field {
+            width: 100%; /* Lebar input field 100% dari container */
+            padding: 8px; /* Padding dalam input field */
+            border: 1px solid #ccc; /* Garis border dengan warna abu-abu */
+            border-radius: 4px; /* Sudut bulat pada input field */
+            box-sizing: border-box; /* Box-sizing untuk padding dan border */
+        }
+
+        .submit-button, .return-button {
+            background-color: black; /* Warna latar belakang */
+            color: white; /* Warna teks putih */
+            padding: 10px 20px; /* Padding dalam tombol */
+            border: none; /* Tidak ada border */
+            border-radius: 4px; /* Sudut bulat pada tombol */
+            cursor: pointer; /* Kursor menunjukkan area bisa di-klik */
+            font-size: 14px; /* Ukuran font */
+        }
+
+        .submit-button {
+            float: right; /* Meletakkan tombol di sebelah kanan */
+        }
+
+        .submit-button:hover, .return-button:hover {
+            background-color: #333; /* Warna latar belakang saat tombol dihover */
+        }
+
+        .centered-button {
+            text-align: center; /* Teks dan konten terpusat */
+            margin-top: 20px; /* Margin atas dari tombol kembali */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Daftar Akun</h2>
+        <form action="register.php" method="POST">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="input-field" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="input-field" required>
+            </div>
+
+            <p>
+                Note: Jika terdapat masalah pada saat login menggunakan akun pribadi diharapkan untuk
+                      mendaftarkan akun yang baru disini dengan username dan password berbeda dari sebelumnya!
+            </p>
+            <input type="submit" value="Daftar" class="submit-button">
+
+            <div class="centered-button">
+                <button onclick="window.location.href = 'index.html';" class="return-button">Kembali</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
